@@ -65,9 +65,6 @@
   .btn-ghost:hover{border-color:var(--paper)}
   .scene{position:relative}
   .scene svg{width:100%;height:auto}
-  .grin{opacity:0;animation:grin 2.4s 0.6s ease forwards}
-  @keyframes grin{to{opacity:1}}
-  @media (prefers-reduced-motion:reduce){.grin{animation:none;opacity:1}}
   @media (max-width:860px){.hero-grid{grid-template-columns:1fr;padding:56px 0 64px;gap:36px}}
 
   /* Facts strip */
@@ -150,12 +147,7 @@
 <header>
   <div class="wrap nav">
     <a class="brand" href="#top" aria-label="Cheshire Cat Antiques, home">
-      <svg viewBox="0 0 48 48" aria-hidden="true">
-        <circle cx="24" cy="24" r="22.5" fill="none" stroke="#c39a4b" stroke-width="1.5"/>
-        <path d="M11 22c4 9 22 9 26 0" fill="none" stroke="#f1ede4" stroke-width="2.4" stroke-linecap="round"/>
-        <path d="M14.5 25.2v2.6M18.5 27v3M22.5 27.9v3M26.5 27.9v3M30.5 27v3M34 25.2v2.6" stroke="#f1ede4" stroke-width="1.2" stroke-linecap="round"/>
-        <circle cx="17" cy="16" r="1.6" fill="#c39a4b"/><circle cx="31" cy="16" r="1.6" fill="#c39a4b"/>
-      </svg>
+      <!-- Logo goes here once the owners approve its use -->
       <span><b>Cheshire Cat Antiques</b><small>Alpine, Texas</small></span>
     </a>
     <nav class="links" aria-label="Main">
@@ -180,7 +172,7 @@
         </div>
       </div>
       <div class="scene" aria-hidden="true">
-        <!-- Illustration: a 1910 house beneath the Twin Sisters at dusk, with a grin in the sky -->
+        <!-- Illustration: a 1910 house beneath the Twin Sisters at dusk -->
         <svg viewBox="0 0 520 440">
           <defs>
             <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
@@ -192,11 +184,6 @@
           </defs>
           <g clip-path="url(#arch)">
             <rect width="520" height="440" fill="url(#sky)"/>
-            <g class="grin">
-              <path d="M330 92c22 30 88 30 110 0" fill="none" stroke="#f1ede4" stroke-width="5" stroke-linecap="round"/>
-              <path d="M342 104v9M356 111v10M371 114v10M386 114v10M401 111v10M416 108v9M428 101v8" stroke="#f1ede4" stroke-width="2" stroke-linecap="round" opacity=".85"/>
-              <circle cx="358" cy="66" r="4" fill="#e7c47a"/><circle cx="412" cy="66" r="4" fill="#e7c47a"/>
-            </g>
             <circle cx="90" cy="80" r="1.4" fill="#f1ede4"/><circle cx="150" cy="54" r="1" fill="#f1ede4"/><circle cx="230" cy="96" r="1.2" fill="#f1ede4"/><circle cx="470" cy="160" r="1" fill="#f1ede4"/><circle cx="60" cy="150" r="1" fill="#f1ede4"/>
             <path d="M0 300 70 236l42 26 70-74 54 48 46-30 64 54 52-40 70 62 52-28v186H0z" fill="#4a2f2a"/>
             <path d="M0 330l90-40 80 22 100-46 90 40 80-24 80 30v128H0z" fill="#38261f"/>
@@ -215,8 +202,8 @@
               <rect x="-20" y="218" width="330" height="8" fill="#2a1d17"/>
               <!-- porch cats -->
               <g fill="#241a14">
-                <path d="M94 218c0-14 6-20 13-20s12 6 12 20z"/><path d="M99 200l3-8 4 6zM110 198l4-6 2 8z"/>
-                <path d="M188 218c0-10 5-15 10-15s10 5 10 15z"/><path d="M191 205l2-6 3 5zM200 204l3-5 1 6z"/>
+                <path d="M94 218c0-14 6-20 13-20s12 6 12 20z"/><circle cx="107" cy="196" r="6"/><path d="M102 194l.5-8 4.5 5zM107 191l4.5-5 .5 8z"/>
+                <path d="M188 218c0-10 5-15 10-15s10 5 10 15z"/><circle cx="198" cy="200" r="4.5"/><path d="M194.5 198l.5-6 3 4zM198 196l3-4 .5 6z"/>
               </g>
             </g>
             <path d="M0 448c80-18 160-14 260-14s180-4 260 14z" fill="#241a14"/>
@@ -327,7 +314,7 @@
     <div class="wrap porch-inner">
       <svg viewBox="0 0 150 100" aria-hidden="true">
         <path d="M20 96c0-34 14-52 34-52s32 18 32 52z" fill="#2c3326"/>
-        <path d="M30 52l6-22 12 16zM60 46l12-16 4 22z" fill="#2c3326"/>
+        <path d="M33 56l3-26 14 16zM58 46l14-16 3 26z" fill="#2c3326"/>
         <path d="M86 96c18 0 30-6 34-20" fill="none" stroke="#2c3326" stroke-width="8" stroke-linecap="round"/>
         <path d="M38 62c6 7 26 7 32 0" fill="none" stroke="#f1ede4" stroke-width="2.5" stroke-linecap="round"/>
         <circle cx="42" cy="54" r="2.6" fill="#e7c47a"/><circle cx="66" cy="54" r="2.6" fill="#e7c47a"/>
